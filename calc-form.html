@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title class="lang" key="calc-page-title">Calculate and Send</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media-querries.css">
+   <script src="js/script.js" defer></script>
+</head>
+<body>
+    <ul class="translate-buttons">
+    <li class="slider-item-lang-en"><button id="en" class="translate"><img src="img/usa-flag.png" alt="usaflag" ></button></li>
+    <li class="slider-item-lang-ua"><button id="ua" class="translate"><img src="img/ua-flag.png" alt="ukrflag"></button></li>
+  </ul>
+  <div class="slider_item">
+        <div class="elements">
+          <img src="img/calc-form-bg.jpg" alt="" class="calc-form-image">
+          <a href="index.html"><img src="img/logo.png" alt="" class="logo"></a>
+          <div class="calc-form-text">
+            <h1 class="calc-form-title lang" key="calc">Calculate and Send</h1>
+            <p class="lang" key="calc-paragraph">
+                Fill out the form, get the result and send us.
+            </p>
+          </div>
+        </div>
+  </div>
+<section>
+  <div class="calc-container">
+    <img src="img/calc-photo.png" alt="">
+    <form id="myForm">
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label lang" key="form-name">Name, Surname</label>
+    <input class="form-control" type="text" placeholder="" aria-label="default input example">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label lang" key="form-tel">Mobile number</label>
+    <input class="form-control" type="number" placeholder="" aria-label="default input example">
+    <div id="emailHelp" class="form-text lang" key="form-help">We'll never share your number with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label lang" key="form-pass">Number of passengers</label>
+    <input id="passengers" class="form-control" type="text" placeholder="" aria-label="default input example">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label lang" key="form-days">
+    Number of days</label>
+    <input id="days" class="form-control" type="text" placeholder="" aria-label="default input example">
+  </div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label lang" key="form-meal" for="flexCheckDefault">
+    Meals
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+  <label class="form-check-label lang" key="form-transfer" for="flexCheckDefault">
+    Transfer to base
+  </label>
+</div>
+<div class="out" id="out">
+  0.00 $
+</div>
+  <button type="submit" class="btn btn-success lang" id="btn" data-bs-toggle="modal" data-bs-target="#calcModal" key="form-btn">Send</button>
+</form>
+<div class="modal custom fade" id="calcModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title lang" id="exampleModalLabel" key="modal-title">Success!</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/green-check-mark.png" alt="">
+        <div class="modal-text lang" key="modal-text">
+          Congratulations, your application has been successfully submitted. Call you during the day and discuss the details!
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success btn-bold" data-bs-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+<footer>
+      <div class="footer-content">
+        <ul class="info">
+            <li><a href="contact.html" class="lang" key="footer-contact">contact</a></li>
+            <li><a href="privacy.html" class="lang" key="footer-privacy">privacy</a></li>
+            <li><a href="office.html"  class="lang" key="footer-office">office</a></li>
+            <li><a href="reports.html" class="lang" key="footer-reports">reports</a></li>
+        </ul>
+        </div>
+    </footer> 
+</section>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery.min.js"></script>
+</body>
